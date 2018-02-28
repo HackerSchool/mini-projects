@@ -13,7 +13,7 @@
 - Botão
 - Arduino
 
-##Funções necessárias no programa:
+## Funções necessárias no programa:
 - **pinMode(pin, mode)** - Configura um pino específico para se comportar como input ou output.
 
 - **digitalWrite(pin, value)** - Mete um certo pino digital a HIGH ou LOW.
@@ -24,5 +24,5 @@
 
 - **delay(ms)** - Pausa o programa durante o período de tempo especificado como parâmetro (em milissegundos).
 
-##Links Úteis:
+## Links Úteis:
 - Funções Standard de Arduino (Referência de todas as funções acima): https://www.arduino.cc/reference/en/#functions
