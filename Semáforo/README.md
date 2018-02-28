@@ -2,9 +2,9 @@
 
 **Objetivo:** Fazer um sistema de semáforos, com a secção para carros e para pedestres. Quando o pedestre deseja atravessar a passadeira deve pressionar um botão que dará início à alteração do estado das luzes de semáforos. Desta forma dá-se indicação para os carros pararem e permitirem que os pedestres atravessem com segurança.
 
-Meter imagem
+[[https://github.com/HackerSchool/mini-projects/tree/master/Esquema/esquema-trafficlights.jpeg|alt=octocat]]
 
-**Material Necessário:**
+## Material Necessário:
 - 2x LED vermelho
 - LED amarelo
 - 2x LED verde
@@ -12,8 +12,7 @@ Meter imagem
 - Botão
 - Arduino
 
-**Funções necessárias no programa:**
-
+##Funções necessárias no programa:
 - **pinMode(pin, mode)** - Configura um pino específico para se comportar como input ou output.
 
 - **digitalWrite(pin, value)** - Mete um certo pino digital a HIGH ou LOW.
@@ -24,5 +23,5 @@ Meter imagem
 
 - **delay(ms)** - Pausa o programa durante o período de tempo especificado como parâmetro (em milissegundos).
 
-**Links Úteis:**
+##Links Úteis:
 - Funções Standard de Arduino (Referência de todas as funções acima): https://www.arduino.cc/reference/en/#functions
