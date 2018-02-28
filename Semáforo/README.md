@@ -2,7 +2,8 @@
 
 **Objetivo:** Fazer um sistema de semáforos, com a secção para carros e para pedestres. Quando o pedestre deseja atravessar a passadeira deve pressionar um botão que dará início à alteração do estado das luzes de semáforos. Desta forma dá-se indicação para os carros pararem e permitirem que os pedestres atravessem com segurança.
 
-![alt text](https://raw.githubusercontent.com/HackerSchool/mini-projects/tree/master/Esquema/esquema-trafficlights.jpeg)
+![esquema-trafficlights](https://user-images.githubusercontent.com/22728137/36764079-de0ce8c2-1c22-11e8-9e94-6ea6f3e51869.jpeg)
+
 
 ## Material Necessário:
 - 2x LED vermelho
