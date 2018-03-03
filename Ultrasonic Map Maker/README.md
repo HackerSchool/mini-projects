@@ -29,8 +29,6 @@ Este projeto é de dificuldade média e tem a duração de cerca de 4 horas.
 
 Neste projeto vamos usar um sensor ultrassónico de distância. Gera ondas de som para além do alcance do ouvido humano e mede a distância calculando o tempo necessário para que estas ondas atinjam o obstáculo e voltem. É semelhante ao sistema que os morcegos usam para se orientar.
 
-![alt text](https://hackster.imgix.net/uploads/image/file/150524/Working-of-HC-SR04-Ultrasonic-Sensor.jpg?auto=compress%2Cformat&w=1280&h=960&fit=max)
-
 Outra componente que vamos usar é o servo. A diferença entre o servo e o motor DC é o facto de que o servo consegue girar num certo ângulo, com bastante precisão e manter-se nessa posição.
 
 Vamos então usar estas duas componentes para termos um ângulo de visão de 180º para o nosso robot.
