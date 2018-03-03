@@ -47,5 +47,41 @@ Vamos colocar o sensor ultrassónico ao servo de modo que fique algo deste géne
 
 De seguida vamos ligar os fios todos ao arduino (usando a breadboard se necessário) de acordo com o seguinte esquema:
 
+![alt text](https://raw.githubusercontent.com/HackerSchool/mini-projects/master/Ultrasonic%20Map%20Maker/imagens/scheme.PNG)
 
+![alt text](https://raw.githubusercontent.com/HackerSchool/mini-projects/master/Ultrasonic%20Map%20Maker/imagens/scheme2.PNG)
 
+### Quarto passo: Código Arduino
+
+O código do Arduino vai controlar o movimento do servo, quando é que as leituras do sensor ultrassónico são capturadas e com que frequência. Abaixo estão explicitados os vários passos do código.
+
+* importar as bibliotecas necessárias (neste caso "Servo.h" e "NewPing.h")
+* definir as variáveis e os pins a usar
+* definir o servo
+* iniciar a comunicação com o serial port
+* esperar 3 segundos
+* iniciar o conteiro a 0
+* rodar o servo 1 grau
+* obter os dados do sensor ultrassónico 1o vezes (por default)
+* fazer a média dos dados
+* enviar a média para o serial port
+* voltar ao passo 7 (rodar o servo 1º)
+* ...
+
+### Quinto passo: Código MatLab
+
+O MatLab vai ler os dados que o Arduino enviou para o serial port. Estes dados dizem-nos duas coisas. A primeira é o grau de rotação do servo, a segunda é a distância de um obstáculo nessa direção. Assim sendo, os dados que temos neste momento estão nas coordenadas polares. Para o gráfico que for gerado fazer algum sentido, será necessário converter estes dados para coordenadas cartesianas X-Y.
+
+E é isto que o código MatLab vai fazer. Vai obter os dados da COM port, guardá-los numa matriz com o respetivo ângulo de rotação e converter para coordenadas cartesianas como mostrado na imagem abaixo.
+
+![alt text](https://raw.githubusercontent.com/HackerSchool/mini-projects/master/Ultrasonic%20Map%20Maker/imagens/coordinates.png)
+
+em que r é a distância do sensor ao objeto e portanto a coordenada do x é rcos(x) e a coordenada do y é rsin(x).
+
+Assim que isto estiver feito, vai devolver como outuput o gráfico dos pontos.
+
+Para um sensor colocado dentro de uma caixa retangular o output é o seguinte:
+
+![alt text](https://hackster.imgix.net/uploads/image/file/150530/desk%20mapping.jpg?auto=compress%2Cformat&w=1280&h=960&fit=max)
+
+**Agora é a tua vez de experimentar!**
